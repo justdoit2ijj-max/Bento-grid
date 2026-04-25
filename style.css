@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple-100: hsl(254, 88%, 90%);
+    --Purple-500: hsl(256, 67%, 59%);
+    --Yellow-100: hsl(31, 66%, 93%);
+    --Yellow-500: hsl(39, 100%, 71%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 7%);
+    --paragraph-size: 18px;
+    --dm-sans: "DM Sans", sans-serif;
+    --font-weight-400: 400;
+    --font-weight-500: 500;
+    --8px: 0.5rem;
+    --16px: 1rem;
+    --24px: 1.5rem;
+    --32px: 2rem;
+    --40px: 2.5rem;
+    --minimal-lh: 1;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Yellow-100);
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--16px);
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.div1 {
+    height: max-content;
+    background-color: var(--Purple-500);
+    padding: var(--8px);
+    border-radius: var(--8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div1 h2 {
+    font-family: var(--dm-sans);
+    line-height: var(--minimal-lh);
+    color: var(--White);
+    font-weight: var(--font-weight-500);
+    text-align: center;
+    font-size: var(--40px);
+    margin: var(--16px);
+}
+
+.div1 span {
+    color: var(--Yellow-500);
+}
+
+.div1 img {
+    height: var(--40px);
+    margin-bottom: var(--8px);
+}
+
+.div1 p {
+    font-size: var(--paragraph-size);
+    color: var(--White);
+    font-family: var(--dm-sans);
+    font-weight: var(--font-weight-400);
+    text-align: center;
+    margin-bottom: var(--24px);
+}
+
+.div2 {
+    background-color: var(--Yellow-100);
+    width: 100%;
+    padding: var(--32px) var(--16px);
+    height: max-content;
+}
+
+.div2 img {
+    width: 100%;
+    margin-bottom: var(--8px);
+}
+
+.div2 h2 {
+    font-family: var(--dm-sans);
+    font-weight: var(--font-weight-500);
+    color: var(--Black);
+    line-height: var(--minimal-lh);
+    font-size: var(--16px);
+}
+
+.div3 {
+    background-color: var(--Yellow-500);
+    height: max-content;
+    border-radius: var(--8px);
+    padding: var(--16px);
+    padding-bottom: 0;
+}
+
+.div3 h2 {
+    font-family: var(--dm-sans);
+    font-weight: var(--font-weight-500);
+    color: var(--Black);
+    line-height: var(--minimal-lh);
+    font-size: var(--24px);
+    margin-bottom: var(--16px);
+}
+
+.div3 img {
+    max-width: 75%;
+    height: auto;
+    display: block;
+}
+
+.div4 {
+    background-color: var(--Purple-100);
+    border-radius: var(--8px);
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: var(--16px);
+}
+
+.div4 h2 {
+    font-family: var(--dm-sans);
+    color: var(--Black);
+    font-weight: var(--font-weight-500);
+    line-height: var(--minimal-lh);
+    margin-bottom: var(--16px);
+    font-size: 1.25rem;
+}
+
+.div4 img,
+.div5 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: var(--16px);
+}
+
+.div4 p {
+    font-family: var(--dm-sans);
+    font-size: var(--paragraph-size);
+    line-height: var(--minimal-lh);
+    font-weight: var(--font-weight-400);
+    color: var(--Black);
+    margin-bottom: var(--16px);
+    text-align: center;
+}
+
+.div5 {
+    background-color: var(--Purple-500);
+    border-radius: var(--8px);
+    padding: var(--16px) var(--40px);
+}
+
+.div5 h2 {
+    color: var(--White);
+    font-family: var(--dm-sans);
+    line-height: var(--minimal-lh);
+    margin-bottom: var(--8px);
+    text-align: center;
+}
+
+.div6 {
+    padding: var(--16px);
+}
+
+.div6 h2 {
+    font-family: var(--dm-sans);
+    color: var(--Black);
+    font-weight: var(--font-weight-500);
+    line-height: var(--minimal-lh);
+    margin-bottom: var(--16px);
+    font-size: var(--32px);
+}
+
+.div6 p {
+    font-family: var(--dm-sans);
+    color: var(--Black);
+    font-weight: var(--font-weight-400);
+    line-height: var(--minimal-lh);
+    margin-bottom: var(--16px);
+}
+
+.div6 img {
+    width: 60%;
+}
+
+.div7 {
+    padding: var(--16px);
+    height: max-content;
+}
+
+.div7 h2 {
+    font-family: var(--dm-sans);
+    color: var(--Black);
+    font-weight: var(--font-weight-500);
+    line-height: var(--minimal-lh);
+    margin-bottom: var(--16px);
+    font-size: var(--24px);
+}
+
+.div7 span {
+    color: var(--Purple-500);
+}
+
+.div7 img {
+    width: 60%;
+    margin-bottom: var(--40px);
+}
+
+.div8 {
+    background-color: var(--Yellow-500);
+    border-radius: var(--8px);
+    padding: var(--16px);
+}
+
+.div8 h2 {
+    font-family: var(--dm-sans);
+    color: var(--Black);
+    font-weight: var(--font-weight-500);
+    line-height: var(--minimal-lh);
+    margin-bottom: var(--16px);
+    font-size: 1.7rem;
+}
+
+.div8 img {
+    width: 75%;
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "div7 div1 div1 div4"
+            "div8 div2 div3 div4"
+            "div8 div6 div5 div5";
+        grid-auto-rows: auto;
+        gap: var(--16px);
+    }
+
+    .div1 {
+        grid-area: div1;
+    }
+
+    .div2 {
+        grid-area: div2;
+    }
+
+    .div2 h2 {
+        font-size: var(--24px);
+    }
+
+    .div3 {
+        grid-area: div3;
+    }
+
+    .div4 {
+        grid-area: div4;
+        height: 100%;
+    }
+
+    .div4 h2 {
+        font-size: var(--24px);
+    }
+
+    .div5 {
+        grid-area: div5;
+        display: flex;
+        align-items: center;
+    }
+
+    .div6 {
+        grid-area: div6;
+    }
+
+    .div7 {
+        grid-area: div7;
+        align-self: center;
+    }
+
+    .div7 img {
+        margin-bottom: 0;
+    }
+
+    .div8 {
+        grid-area: div8;
+        padding: var(--32px) var(--16px);
+        height: 80%;
+        align-self: end;
+    }
+
+    .div5 img {
+        height: 10rem;
+    }
+
+    .div8 img {
+        width: 100%;
+    }
+}
